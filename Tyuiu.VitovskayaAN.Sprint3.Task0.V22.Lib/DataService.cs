@@ -7,9 +7,9 @@ namespace Tyuiu.VitovskayaAN.Sprint3.Task0.V22.Lib
         {
             double multiplySeries = 1;
             int i;
-            for (i = startValue; i < stopValue; i++)
+            for (i = startValue; i < stopValue + 1; i++)
             {
-                multiplySeries = multiplySeries * ((Math.Pow(value, startValue) + 4) * Math.Cos(value));
+                multiplySeries = multiplySeries * ((Math.Pow(value, i) + 4) * Math.Cos(value));
             }
             return Math.Round(multiplySeries, 3);
         }
