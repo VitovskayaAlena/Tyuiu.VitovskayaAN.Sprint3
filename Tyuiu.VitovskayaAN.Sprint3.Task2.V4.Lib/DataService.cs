@@ -8,7 +8,7 @@ namespace Tyuiu.VitovskayaAN.Sprint3.Task2.V4.Lib
             double sumSeries = 1;
             do
             {
-                sumSeries *= (startValue / (Math.Pow(Math.Pow(Math.Sin(1), -7), -2)));
+                sumSeries *= (Math.Pow((startValue / (Math.Pow(Math.Sin(1), -7))), -2));
                 startValue++;
             } while (startValue <= stopValue);
             return Math.Round(sumSeries, 3);
